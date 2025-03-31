@@ -1,0 +1,126 @@
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* Conteneur du quiz */
+.quiz-container {
+    background: #1e1e2f;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Titre du quiz */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00c6ff;
+}
+
+/* Conteneur des questions */
+#question-container {
+    margin-bottom: 20px;
+}
+
+/* Boutons des options */
+#options button {
+    display: block;
+    background: #0072ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+#options button:hover {
+    background: #005bb5;
+}
+
+/* Bouton suivant */
+#next-btn {
+    background: #00c6ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+#next-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Conteneur du score */
+#score-container {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #00c6ff;
+}
+
+/* Style pour les boutons des catégories */
+#themes button {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#themes button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+#themes button:active {
+    background-color: #004a99;
+    transform: scale(0.98);
+}
+
+#themes button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 198, 255, 0.5);
+}
+
+#answers-container {
+    max-height: none; /* Suppression de la limite de hauteur */
+    overflow-y: visible; /* Affichage complet sans scrollbar */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1e1e2f;
+    color: #fff;
+    border: 1px solid #0072ff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.answer {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
